@@ -1,0 +1,109 @@
+<html>
+<head>
+
+  <title>Sun Series | The Baltimore Sun</title>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+ 
+
+    <script src="http://www.baltimoresun.com/thirdpartyservice?disablessor=true" async></script>
+    <div data-trb-thirdpartynav></div>
+
+
+<div id="container">
+
+      <div id="videoWrapper">
+      <iframe src="about:blank"  frameborder="0" id="mp4video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+
+      <a class="button-small black rounded3" href="#" id="videolink"><span>&#9658;</span><!-- Play--></a>
+
+
+
+      <div id="headline">
+          COLLATERAL<br><br>
+        DAMAGE
+      </div>
+
+
+      <div id="byline">
+          THE BALTIMORE SUN
+      </div>
+
+<br> <center><a href="#" id="videolink2">CLICK <span>&#9658;</span> TO WATCH THE VIDEO ABOVE</a>
+<br><br>
+
+
+
+</center>
+
+
+
+      <div id="led">
+         In the days following Freddie Gray’s death, The Baltimore Sun had exclusive access to police investigators as they gathered evidence, debated legal issues and weathered public pressure. Select a chapter below to begin the story.
+
+
+          
+
+      </div>
+
+
+      <div id="blocks">
+
+        <a href="http://www.baltimoresun.com/news/maryland/investigations/bal-collateral-damage-storygallery-storygallery.html"><img src="thumbs-square1.png" class="block"></a>
+        <a href="http://www.baltimoresun.com/renaissance-violence"><img src="thumbs-square2.png" class="block"></a>
+        <a href="http://www.baltimoresun.com/violence-survey"><img src="thumbs-square3.png" class="block"></a>
+        <a href="http://www.baltimoresun.com/renaissance-high"><img src="thumbs-square4.png" class="block"></a>
+        
+        <a href="http://www.baltimoresun.com/news/maryland/investigations/bal-collateral-damage-storygallery-storygallery.html"><img src="thumbs-horz1.png" class="block-mobile"></a>
+        <a href="http://www.baltimoresun.com/renaissance-violence"><img src="thumbs-horz2.png" class="block-mobile"></a>
+        <a href="hhttp://www.baltimoresun.com/violence-survey"><img src="thumbs-horz3.png" class="block-mobile"></a>
+        <a href="http://www.baltimoresun.com/renaissance-high"><img src="thumbs-horz4.png" class="block-mobile"></a>
+      </div>
+
+
+
+
+      <div id="footer">
+        <p>COPYRIGHT 2016 <a href="http://www.baltimoresun.com">THE BALTIMORE SUN</a>
+      </div>
+
+
+</div>
+
+<!-- THIS SCRIPT CHANGES OUT THE VIDEO ON CLICK IN BOTH MP4 and WEBM-->
+
+<script type="text/javascript">
+
+	var videosource = document.getElementById('mp4video');
+	var videobutton = document.getElementById("videolink");
+  var videobutton2 = document.getElementById("videolink2");
+	var newmp4 = 'https://player.vimeo.com/video/154099538?autoplay=1';
+
+	 
+	videobutton.addEventListener("click", function(event) {
+	    videosource.setAttribute('src', newmp4);
+	    document.getElementById("videolink").style.display = "none";
+               document.getElementById("mp4video").style.display = "inline";
+	}, false);
+ 
+  videobutton2.addEventListener("click", function(event) {
+      videosource.setAttribute('src', newmp4);
+      document.getElementById("videolink").style.display = "none";
+               document.getElementById("mp4video").style.display = "inline";
+  }, false);
+ 
+
+
+</script>
+
+
+
+</body>
+</html>
